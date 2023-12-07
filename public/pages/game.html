@@ -24,7 +24,7 @@
 
 <body>
     <div class="">
-        <p class="flex items-center justify-center mx-auto mt-2 mb-14 text-xs md:text-md lg:text-2xl">
+        <p id="txt" class="flex items-center justify-center mx-auto mt-2 mb-14 text-xs md:text-md lg:text-2xl">
         You have 5 rounds of 30 seconds each.
         If you win 3 times, you win the game!
         If you lose 3 times, the game is over!
@@ -61,7 +61,7 @@
         <img class="w-12 h-12" src="../../src/assets/img/BALL.svg " alt="image description">
     </div>
     <div class="flex items-center justify-center ">
-        <button class="play-btn bg-gray-400 w-52 h-20 rounded-2xl mt-6 text-slate-50 text-4xl md:text-5xl lg:text-6xl lg:text-7xl"
+        <button id="play-btn" onclick="changeText" class="play-btn bg-gray-400 w-52 h-20 rounded-2xl mt-6 text-slate-50 text-4xl md:text-5xl lg:text-6xl lg:text-7xl"
         >PLAY
         </button>
     </div>
@@ -72,5 +72,6 @@
         </p>
     </footer>
 
+    <script src="text.js"></script>
 </body>
 </html>
