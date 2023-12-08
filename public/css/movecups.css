@@ -1,0 +1,20 @@
+#glass2 { 
+    animation-name: glass2;
+    animation-duration: 4s;
+    position: relative;
+    animation-timing-function: linear;
+   
+}
+
+@keyframes glass2{
+    0% {bottom:0px;}
+    50% {bottom: 100px;}
+    100% {bottom:0px;}
+
+}
+
+#ball{
+    margin-top: -80px;
+}
+
+
