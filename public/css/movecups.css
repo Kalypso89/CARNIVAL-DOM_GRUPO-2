@@ -16,9 +16,10 @@
     100% {bottom:0px;}
 
 }
-/* 
+
 #ball{
-    margin-top: -80px;
-} */
+    transform: translate(-50%, -50%);
+    display: none;
+}
 
 

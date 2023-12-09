@@ -1,33 +1,39 @@
-let ballUnderGlass = document.getElementById('ball');
-let selectedCup;
-const glass1 = document.getElementById('glass1');
-const glass2 = document.getElementById('glass');
-const glass3 = document.getElementById('glass3');
-let playButton = document.querySelector('play-btn');
 
 
 
+let ballCup = 1; // Inicialmente, la bola está en el vaso del medio
 
-function moveGlass() {
+    function playGame() {
+        resetGame();
+        moveCupsRandomly();
+        setTimeout(() => revealBall(), 6000);
+    }
 
-    const randomPosition1 = getRandomPosition();
-    const randomPosition2 = getRandomPosition();
-    const randomPosition3 = getRandomPosition();
+    function resetGame() {
+        ballCup = Math.floor(Math.random() * 3);
+        document.getElementById('ball').style.display = 'none';
+    }
 
-    glass1.style.transform = `translateX(${randomPosition1}px)`;
-    glass.style.transform =  `translateX(${randomPosition2}px)`;
-    glass3.style.transform = `translateX(${randomPosition3}px)`;
-}
+    function moveCupsRandomly() {
+        let cups = document.getElementsByClassName('glass');
+        let container = document.getElementById('glass-container');
+        let cupOrder = Array.from(cups).map((glass, index) => ({ glass, order: index }));
+        cupOrder.sort(() => Math.random() - 0.5);
 
-function getRandomPosition() {
-    // Generar una posición aleatoria entre 0 y 300 (ajusta según tus necesidades)
-    return Math.floor(Math.random() * 3);
-}
+        for (let i = 0; i < cupOrder.length; i++) {
+        container.appendChild(cupOrder[i].glass);
+        }
+    }
 
+    function revealBall() {
+        document.getElementById('ball').style.display = 'block';
+    }
 
-
-
-
-
-
+    function checkCup(selectedCup) {
+        if (selectedCup === ballCup) {
+        alert('¡Has ganado!');
+        } else {
+        alert('¡Has perdido!');
+        }
+    }
 
