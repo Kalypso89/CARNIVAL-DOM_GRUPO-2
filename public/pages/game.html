@@ -9,16 +9,13 @@
       href="./src/assets/icons/LOGO.svg"
       type="image/x-icon"
     />
-    <!--Script de Tailwind-->
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    <!--Meter fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Michroma&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <!--Hojas de Estilo-->
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/game.css" />
   </head>
@@ -46,9 +43,10 @@
             0
           </div>
         </div>
-        <div class="round-txt text-center space-y-1">
+        <div class="text-center space-y-1">
           <p class="text-sm lg:text-lg xl:text-2xl">ROUND</p>
           <div
+            id="round-txt"
             class="bg-white shadow-xl w-20 h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 xl:w-40 xl:h-40 2xl:w-32 2xl:h-32 rounded-xl"
           ></div>
         </div>
@@ -64,7 +62,7 @@
       <div
         class="flex flex-row items-center justify-center w-auto h-32 mt-20 sm:h-24 sm:mt-20 md:h-24 md:mt-20 lg:h-52 lg:mt-24 xl:h-72 xl:mt-48"
       >
-        <div  id="glass1" class="absolute left-10 top-50 ">
+        <div id="glass1" class="absolute left-10 top-50">
           <img
             class="w-24 h-24 md:w-28 md:h-28 lg:w-40 lg:h-40 xl:w-52 xl:h-52"
             src="../../src/assets/img/GLASS 1.svg "
@@ -77,10 +75,11 @@
             src="../../src/assets/img/GLASS 2.svg "
             alt="image description"
           />
-          <img id="ball"
-          class="w-10 h-10 lg:w-14 lg:h-14 xl:w-20 xl:h-20"
-          src="../../src/assets/img/BALL.svg "
-          alt="image description"
+          <img
+            id="ball"
+            class="w-10 h-10 lg:w-14 lg:h-14 xl:w-20 xl:h-20"
+            src="../../src/assets/img/BALL.svg "
+            alt="image description"
           />
         </div>
         <div id="glass3" class="absolute left-60 top-50">
@@ -91,7 +90,7 @@
           />
         </div>
       </div>
-  
+
       <div class="flex items-center justify-center">
         <button
           class="play-btn bg-gray-400 w-52 h-20 rounded-2xl mt-6 text-slate-50 text-4xl md:text-4xl md:w-60 h-20 lg:text-6xl lg:w-80 lg:h-28"
@@ -106,4 +105,5 @@
       </footer>
     </div>
   </body>
+  <script src="../js/scoreboard-rounds.js"></script>
 </html>
