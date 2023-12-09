@@ -54,34 +54,40 @@
         </div>
     </div>
 
-    <div class="flex flex-row items-center justify-center w-auto h-52">
+    <div class="glass-container flex flex-row items-center justify-center w-auto h-52">
         
-        <div id="glass1">
+        <div id="glass1" class="glass" onclick="selectCup(0)"  style="left: 0;">
             <img class="w-24 h-24" src="../../src/assets/img/GLASS 1.svg " alt="image description"/>
         </div>
 
-        <div id="glass2">
-            <img class="w-24 h-24" src="../../src/assets/img/GLASS 2.svg " alt="image description"/>
+        <div  class="glass relative  " onclick="selectCup(1)" style="left: 0;">
+            <img id="glass2" class=" absolute w-24 h-24 z-10 left-0" src="../../src/assets/img/GLASS 2.svg " alt="image description"/>
+            <div id="ball" class="absolute z-0 left-5 top-12">
+                <img class="w-12 h-12" src="../../src/assets/img/BALL.svg " alt="image description"/>
+            </div>
+
         </div>
         
-        <div id="glass3">
+        <div id="glass3" class="glass" onclick="selectCup(2)" style="left: 0;">
             <img class="w-24 h-24" src="../../src/assets/img/GLASS 3.svg " alt="image description"/>
         </div>
     
     </div>
     
     
-    <div class="flex items-center justify-center h-0" id="ball">
+    <!-- <div class="flex items-center justify-center h-0" id="ball">
         <img class="w-12 h-12" src="../../src/assets/img/BALL.svg " alt="image description"/>
     
     
-    </div>
+    </div> -->
 
     <div class="flex items-center justify-center" id="play">
 
-        <button class="play-btn bg-gray-400 w-52 h-20 rounded-2xl mt-6 text-slate-50 text-4xl md:text-5xl lg:text-6xl lg:text-7xl">PLAY</button>
+        <button class="play-btn bg-gray-400 w-52 h-20 rounded-2xl mt-6 text-slate-50 text-4xl md:text-5xl lg:text-6xl lg:text-7xl" onclick="moveGlass()">PLAY</button>
 
     </div>
+
+    <script src="../js/random-cups.js"></script>
       <footer class="mt-8">
         <p class="text-xs text-gray-800 flex items-center justify-center">
           Copyright © 2023 Trileras - All rights reserved
