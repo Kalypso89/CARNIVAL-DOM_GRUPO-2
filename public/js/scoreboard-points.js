@@ -41,9 +41,3 @@ export function incrementLoserPoints() {
     });
   refreshPointsDisplay();
 }
-
-resetPointsDisplay();
-refreshPointsDisplay();
-setInterval(() => {
-  incrementWinnerPoints();
-}, 5000);
