@@ -1,11 +1,22 @@
 document.addEventListener("DOMContentLoaded", main);
 
-function main () {
-    document.getElementById("start__form").addEventListener("submit",submitForm);
-};
-
-function submitForm (event) { //handler del evento cuando se envía el formulario
-    event.preventDefault();
-    localStorage.setItem("playerName", event.target.player.value);
-    location.pathname ="/public/pages/game.html";
+function main() {
+  document.getElementById("start__form").addEventListener("submit", submitForm);
 }
+
+function submitForm(event) {
+  //handler del evento cuando se envía el formulario
+  event.preventDefault();
+  localStorage.setItem("playerName", event.target.player.value);
+  location.pathname = "/public/pages/game.html";
+}
+
+//funciones para vincular el contador de rondas
+import { incrementRound, resetRoundDisplay } from "./scoreboard-rounds.js";
+
+//funciones para vincular los puntos ganadores o perdedores
+import {
+  incrementWinnerPoints,
+  incrementLoserPoints,
+  resetPointsDisplay,
+} from "./scoreboard-points.js";

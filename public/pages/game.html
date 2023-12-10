@@ -24,7 +24,8 @@
   <body>
     <div
       class="bg-no-repeat bg-center bg-[length:100%_100%]"
-      style="background-image: url(/src/assets/img/background\ image\ GAME.jpg)">
+      style="background-image: url(/src/assets/img/background\ image\ GAME.jpg)"
+    >
       <div class="flex flex-col">
         <p
           class="game-instruction flex items-center justify-center mx-auto mb-2 mt-36 lg:mt-44 text-center text-sm md:text-base lg:text-2xl xl:text-3xl"
@@ -38,10 +39,9 @@
         <div class="text-center space-y-1">
           <p class="text-sm lg:text-lg xl:text-2xl">WIN</p>
           <div
-            class="counter-numbers bg-white shadow-xl w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-28 xl:h-28 2xl:w-32 2xl:h-32 rounded-xl text-xl flex flex-row justify-center items-center"
-          >
-            0
-          </div>
+            id="win-points"
+            class="bg-white shadow-xl w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-28 xl:h-28 2xl:w-32 2xl:h-32 rounded-xl text-xl flex flex-row justify-center items-center"
+          ></div>
         </div>
         <div class="text-center space-y-1">
           <p class="text-sm lg:text-lg xl:text-2xl">ROUND</p>
@@ -53,10 +53,9 @@
         <div class="text-center space-y-1">
           <p class="text-sm lg:text-lg xl:text-2xl">LOSS</p>
           <div
-            class="counter-numbers bg-white shadow-xl w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-28 xl:h-28 2xl:w-32 2xl:h-32 rounded-xl text-xl flex flex-row justify-center items-center"
-          >
-            0
-          </div>
+            id="loss-points"
+            class="bg-white shadow-xl w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-28 xl:h-28 2xl:w-32 2xl:h-32 rounded-xl text-xl flex flex-row justify-center items-center"
+          ></div>
         </div>
       </div>
       <div
@@ -105,5 +104,6 @@
       </footer>
     </div>
   </body>
-  <script src="../js/scoreboard-rounds.js"></script>
+  <script type="module" src="../js/scoreboard-rounds.js"></script>
+  <script type="module" src="../js/scoreboard-points.js"></script>
 </html>
