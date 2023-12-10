@@ -119,7 +119,7 @@ function revealBall() {
   const ball = document.getElementById('ball');
   const glassWithBall = document.getElementById(`glass${ballPosition}`);
   ball.style.display = 'block';
-  ball.style.top = glassWithBall.offsetTop + 'px';
+//   ball.style.top = glassWithBall.offsetTop + 'px';
   ball.style.left = glassWithBall.offsetLeft + 'px';
 }
 
@@ -131,7 +131,7 @@ function hideBall() {
 function shuffleGlasses() {
   // Intercambiar las posiciones de los vasos de manera aleatoria
   const glass = document.querySelectorAll('.glass');
-  const shuffledGlass = [...glass].sort(() => Math.random() - 0.5);
+  const shuffledGlass = [...glass].sort(() => Math.random() -0.5);
 
   shuffledGlass.forEach((glass, index) => {
     const newPosition = index * 120; // Ajusta según tu diseño

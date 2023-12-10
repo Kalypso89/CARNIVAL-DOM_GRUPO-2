@@ -4,8 +4,9 @@
 
 .subtitle,
 .game-instruction,
-.round-txt,
-.counter-numbers {
+#round-txt,
+#win-points,
+#loss-points {
     font-family: 'Michroma';
 }
 
