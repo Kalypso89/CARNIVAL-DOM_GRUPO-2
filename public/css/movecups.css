@@ -1,0 +1,38 @@
+.glasses {
+    position: relative;
+  } 
+
+
+#glass2 { 
+    
+    animation-name: glass2;
+    animation-duration: 4s;
+    position: relative;
+    animation-timing-function: linear;
+   
+}
+
+@keyframes glass2{
+    0% {bottom:0px;}
+    50% {bottom: 100px;}
+    100% {bottom:0px;}
+
+}
+
+#ball{
+    margin-top: -80px;
+    
+}
+#ball {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.glass{
+  display: inline-block;
+  position: relative;
+  transition: left 2s ease;
+}
