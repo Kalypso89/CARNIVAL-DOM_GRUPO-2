@@ -1,5 +1,3 @@
-// scoreboard-rounds.js
-
 export function setRoundDisplayFromLocalStorage(roundDisplay) {
   localStorage.setItem("roundDisplay", JSON.stringify(roundDisplay));
 }
