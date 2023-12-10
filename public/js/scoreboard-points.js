@@ -17,9 +17,33 @@ export function resetPointsDisplay() {
 export function refreshPointsDisplay() {
   const pointsDisplay = getPointsDisplayfromLocalStorage();
   const displayWinnerPoints = pointsDisplay.win;
+  document.getElementById("win-points").textContent = displayWinnerPoints;
   const displayLoserPoints = pointsDisplay.loss;
-  document.getElementById("counter-numbers-win").textContent =
-    displayWinnerPoints;
-  document.getElementById("counter-numbers-loss").textContent =
-    displayLoserPoints;
+  document.getElementById("loss-points").textContent = displayLoserPoints;
 }
+
+export function incrementWinnerPoints() {
+  const pointsDisplay = getPointsDisplayfromLocalStorage();
+  if (pointsDisplay.win < pointsDisplay.max)
+    setPointsDisplayfromLocalStorage({
+      win: pointsDisplay.win + 1,
+      max: pointsDisplay.max,
+    });
+  refreshPointsDisplay();
+}
+
+export function incrementLoserPoints() {
+  const pointsDisplay = getPointsDisplayfromLocalStorage();
+  if (pointsDisplay.loss < pointsDisplay.max)
+    setPointsDisplayfromLocalStorage({
+      loss: pointsDisplay.loss + 1,
+      max: pointsDisplay.max,
+    });
+  refreshPointsDisplay();
+}
+
+resetPointsDisplay();
+refreshPointsDisplay();
+setInterval(() => {
+  incrementWinnerPoints();
+}, 5000);
