@@ -29,12 +29,6 @@ function incrementRound() {
   refreshDisplay();
 }
 
-resetRoundDisplay();
-refreshDisplay();
-setInterval(() => {
-  incrementRound();
-}, 5000);
-
 module.exports = {
   incrementRound,
   resetRoundDisplay,
