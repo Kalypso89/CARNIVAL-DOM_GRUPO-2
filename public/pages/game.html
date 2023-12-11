@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/game.css" />
+    <link rel="stylesheet" href="../css/game-countdown.css" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,6 +36,10 @@
           If you lose 3 times, the game is over!
         </p>
       </div>
+      <div
+        id="time"
+        class="play-btn bg-red-600 w-52 h-20 rounded-2xl mt-6 text-slate-50 text-2xl md:text-4xl md:w-60 h-20 lg:text-6xl lg:w-80 lg:h-28"
+      ></div>
       <div class="flex items-end justify-center space-x-6 mx-4 my-4">
         <div class="text-center space-y-1">
           <p class="text-sm lg:text-lg xl:text-2xl">WIN</p>
@@ -92,6 +97,7 @@
 
       <div class="flex items-center justify-center">
         <button
+          id="play-btn"
           class="play-btn bg-gray-400 w-52 h-20 rounded-2xl mt-6 text-slate-50 text-4xl md:text-4xl md:w-60 h-20 lg:text-6xl lg:w-80 lg:h-28"
         >
           PLAY
@@ -104,6 +110,9 @@
       </footer>
     </div>
   </body>
+  <script src="../js/main.js"></script>
+  <script src="../js/change-text.js"></script>
+  <script src="../js/game-countdown.js"></script>
   <script type="module" src="../js/scoreboard-rounds.js"></script>
   <script type="module" src="../js/scoreboard-points.js"></script>
 </html>
