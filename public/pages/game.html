@@ -9,65 +9,48 @@
       href="./src/assets/icons/LOGO.svg"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/game.css" />
+    <!--Script de Tailwind-->
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <!--Meter fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Michroma&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <!--Hojas de Estilo-->
+    <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/game.css" />
     <link rel="stylesheet" href="../css/movecups.css" />
   </head>
 
-<<<<<<< HEAD
-</head>
-
-<body>
-    <div class="">
-        <p id="txt" class="flex items-center justify-center mx-auto mt-2 mb-14 text-xs md:text-md lg:text-2xl">
-        You have 5 rounds of 30 seconds each.
-        If you win 3 times, you win the game!
-        If you lose 3 times, the game is over!
-=======
   <body>
-    <div
-      class="bg-no-repeat bg-center bg-[length:100%_100%]"
-      style="background-image: url(/src/assets/img/background\ image\ GAME.jpg)"
-    >
-      <div class="flex flex-col">
-        <p
-          class="game-instruction flex items-center justify-center mx-auto mb-2 mt-36 lg:mt-44 text-center text-sm md:text-base lg:text-2xl xl:text-3xl"
-        >
-          You have 5 rounds of 30 seconds each.<br />
-          If you win 3 times, you win the game!<br />
-          If you lose 3 times, the game is over!
->>>>>>> a7fcc75ab05fc7b51e1abcad1d095a8afa3ca0f8
+    <div class="bg-no-repeat bg-center bg-cover h-screen md:bg-center-contain lg:bg-center-contain xl:bg-center-contain 2xl:bg-center-contain"
+      style="background-image: url(/src/assets/img/background\ image\ GAME.jpg)">
+    
+
+    <div class="flex flex-col">
+        <p class="game-instruction flex items-center justify-center mx-auto mb-2 lg:mt-32 mt-36 text-center text-sm md:text-base lg:text-xl xl:text-xl">
+            You have 5 rounds of 30 seconds each.<br />
+             If you win 3 times, you win the game!<br />
+             If you lose 3 times, the game is over!
         </p>
-      </div>
-      <div class="flex items-end justify-center space-x-6 mx-4 my-4">
-        <div class="text-center space-y-1">
-          <p class="text-sm lg:text-lg xl:text-2xl">WIN</p>
-          <div
-            id="win-points"
-            class="bg-white shadow-xl w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-28 xl:h-28 2xl:w-32 2xl:h-32 rounded-xl text-xl flex flex-row justify-center items-center"
-          ></div>
+    </div>
+      
+    <div class="flex items-end justify-center space-x-6 mx-4 my-4">
+        <div class="text-center space-y-1">  
+            <p class="text-sm">WIN</p>
+            <div class="bg-white shadow-xl w-14 h-14 rounded-xl"></div>
         </div>
-        <div class="text-center space-y-1">
-          <p class="text-sm lg:text-lg xl:text-2xl">ROUND</p>
-          <div
-            id="round-txt"
-            class="bg-white shadow-xl w-20 h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 xl:w-40 xl:h-40 2xl:w-32 2xl:h-32 rounded-xl text-lg lg:text-xl xl:text-2xl flex flex-row justify-center items-center"
-          ></div>
-        </div>
-        <div class="text-center space-y-1">
-          <p class="text-sm lg:text-lg xl:text-2xl">LOSS</p>
-          <div
-            id="loss-points"
-            class="bg-white shadow-xl w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-28 xl:h-28 2xl:w-32 2xl:h-32 rounded-xl text-xl flex flex-row justify-center items-center"
-          ></div>
+
+    <div class="round-txt text-center space-y-1">
+          <p>ROUND</p>
+          <div class="bg-white shadow-xl w-24 h-24 rounded-2xl"></div>
+    </div>
+
+    <div class="text-center space-y-1">
+        <p class="text-sm">LOSS</p>
+        <div class="bg-white shadow-xl w-14 h-14 rounded-xl"></div>
         </div>
     </div>
 
@@ -105,17 +88,7 @@
         <p class="text-xs text-gray-800 flex items-center justify-center">
           Copyright © 2023 Trileras - All rights reserved
         </p>
-<<<<<<< HEAD
-    </footer>
-
-    <script src="./../js/text.js"></script>
-</body>
-</html>
-=======
       </footer>
     </div>
   </body>
-  <script type="module" src="../js/scoreboard-rounds.js"></script>
-  <script type="module" src="../js/scoreboard-points.js"></script>
 </html>
->>>>>>> a7fcc75ab05fc7b51e1abcad1d095a8afa3ca0f8
